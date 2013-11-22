@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/navigation_bar_bg">
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="掌上陕西"
+                android:textSize="24dp"
+                >
+
+        </TextView>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="W W W . H S W . C N"
+                android:textSize="9dp">
+
+        </TextView>
+    </LinearLayout>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:padding="1dp"
+
+                >
+
+
+        <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                android:scrollbars="none"
+                >
+            <LinearLayout
+                    android:layout_width="800dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                <Button
+                        android:id="@+id/main_button_yaoWen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_button_item"
+                        android:text="    要闻     "
+                        >
+                </Button>
+
+                <Button
+                        android:id="@+id/main_button_xiAn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_button_item"
+                        android:text="     西安     "
+                        android:layout_weight="1">
+                </Button>
+
+                <Button
+                        android:id="@+id/main_button_chaoGou"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_button_item"
+                        android:text="     潮购     "
+                        android:layout_weight="1">
+                </Button>
+
+                <Button
+                        android:id="@+id/main_button_anJu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_button_item"
+                        android:text="     安居     "
+                        android:layout_weight="1">
+                </Button>
+
+
+                <Button
+                        android:id="@+id/main_button_shengHuo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_button_item"
+                        android:text="     生活    "
+                        android:layout_weight="1">
+                </Button>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </ScrollView>
+    <ListView
+            android:id="@+id/main_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff000"
+            android:layout_weight="1">
+
+    </ListView>
+
+    <RadioGroup
+            android:id="@+id/main_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+
+        <RadioButton
+                android:id="@+id/main_radio_ziXun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_item"
+                android:text="资讯"
+                android:button="@null"
+                android:drawableTop="@drawable/main_information_normal_icon"
+                android:gravity="center"
+                android:checked="true"
+                android:layout_weight="1">
+
+        </RadioButton>
+
+        <RadioButton
+                android:id="@+id/main_radio_huoDong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_item"
+                android:text="活动"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/main_event_normal_icon">
+
+        </RadioButton>
+        <RadioButton
+                android:id="@+id/main_radio_tuShuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_item"
+                android:text="图说"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/main_album_normal_icon">
+
+        </RadioButton>
+        <RadioButton
+                android:id="@+id/main_radio_gengDuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_item"
+                android:text="更多"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/main_more_normal_icon">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+</LinearLayout>
+

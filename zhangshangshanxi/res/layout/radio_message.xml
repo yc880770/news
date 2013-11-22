@@ -1,0 +1,29 @@
+ <?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+             >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/radio_button_item"
+        android:id="@+id/tab_radio_message"
+        android:gravity="center">
+    <ImageView
+            android:id="@+id/radio_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_information_normal_icon"
+     />
+
+    <TextView
+            android:id="@+id/radio_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="资讯"
+            />
+    </LinearLayout>
+</LinearLayout>

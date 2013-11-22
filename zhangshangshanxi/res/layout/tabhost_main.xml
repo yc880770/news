@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TabHost
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <LinearLayout
+                    android:id="@+id/tab_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFf"
+                    android:orientation="vertical">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/navigation_bar_bg">
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="掌上陕西"
+                            android:textSize="24dp"
+                            >
+
+                    </TextView>
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="W W W . H S W . C N"
+                            android:textSize="9dp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+                <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:padding="1dp"
+
+                        >
+                    <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:scrollbars="none"
+                            >
+                        <!--<RadioGroup-->
+                                <!--android:layout_width="800dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:gravity="center"-->
+                                <!--android:id="@+id/tab_title_radio_group"-->
+                                <!-->-->
+                            <!--<RadioButton-->
+                                    <!--android:id="@+id/tab_title_button_yaoWen"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@drawable/back_button_item"-->
+                                    <!--android:text="    要闻     "-->
+                                    <!--android:button="@null"-->
+                                    <!--android:textColor="@color/text_item"-->
+                                    <!-->-->
+                            <!--</RadioButton>-->
+
+                            <!--<RadioButton-->
+                                    <!--android:id="@+id/tab_title_button_xiAn"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@drawable/back_button_item"-->
+                                    <!--android:text="     西安     "-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:button="@null"-->
+                                    <!--android:textColor="@color/text_item">-->
+                            <!--</RadioButton>-->
+
+                            <!--<RadioButton-->
+                                    <!--android:id="@+id/tab_title_button_chaoGou"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@drawable/back_button_item"-->
+                                    <!--android:text="     潮购     "-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:button="@null"-->
+                                    <!--android:textColor="@color/text_item">-->
+                            <!--</RadioButton>-->
+
+                            <!--<RadioButton-->
+                                    <!--android:id="@+id/tab_title_button_anJu"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@drawable/back_button_item"-->
+                                    <!--android:text="     安居     "-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:button="@null"-->
+                                    <!--android:textColor="@color/text_item">-->
+                            <!--</RadioButton>-->
+
+                            <!--<RadioButton-->
+                                    <!--android:id="@+id/tab_title_button_shengHuo"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@drawable/back_button_item"-->
+                                    <!--android:text="     生活    "-->
+                                    <!--android:textColor="@color/text_item"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:button="@null">-->
+                            <!--</RadioButton>-->
+
+                        <!--</RadioGroup>-->
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="34dp"
+                                android:id="@+id/tab_title_listView"
+                                android:orientation="horizontal"
+                                android:background="#f0f0f0">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+                <ListView
+                        android:id="@+id/tab_message_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="48dp"
+                        android:layout_weight="1">
+
+                </ListView>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/tab_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FcFcFF">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/navigation_bar_bg">
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="活动"
+                            android:textSize="24dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <PullToRefreshListView
+                        android:id="@+id/tab_activity_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="48dp"
+                        android:layout_weight="1">
+
+                </PullToRefreshListView>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/tab_description"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/navigation_bar_bg">
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="图说"
+                            android:textSize="24dp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <ListView
+                        android:id="@+id/tab_album_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="48dp"
+                        android:layout_weight="1">
+
+                </ListView>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/tab_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/navigation_bar_bg">
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="更多"
+                            android:textSize="24dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <ScrollView
+                        android:id="@+id/tab_more_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/comment_bg"
+                                android:padding="5dp"
+                                >
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+
+                                    android:orientation="vertical">
+
+
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" 账户信息"
+                                        android:textColor="#A0A1A1"
+                                        android:padding="5dp">
+
+                                </TextView>
+                                <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/grouped_item_bg"
+                                        android:orientation="horizontal"
+                                        android:gravity="left"
+                                        android:text="  新浪微博(未绑定)            "
+                                        android:drawableLeft="@drawable/sina_wei_bo_icon"
+                                        android:drawableRight="@drawable/show_next_item"
+                                        android:textSize="16dp"
+                                        android:padding="10dp">
+                                </Button>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+
+                                    android:orientation="vertical">
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" 我的反馈"
+                                        android:textColor="#A0A1A1"
+                                        android:padding="5dp">
+                                </TextView>
+                                <Button
+                                        android:id="@+id/tab_more_feedback_button"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/grouped_item_bg"
+                                        android:orientation="horizontal"
+                                        android:gravity="left"
+                                        android:text="  意见反馈            "
+                                        android:drawableLeft="@drawable/feedback_icon"
+                                        android:drawableRight="@drawable/show_next_item"
+                                        android:textSize="16dp"
+                                        android:padding="10dp">
+                                </Button>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+
+                                    android:orientation="vertical">
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" 我的设置"
+                                        android:textColor="#A0A1A1"
+                                        android:padding="5dp">
+                                </TextView>
+                                <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/grouped_item_bg"
+                                        android:orientation="horizontal"
+                                        android:gravity="left"
+                                        android:text="  清理缓存            "
+                                        android:drawableLeft="@drawable/clean_cache_icon"
+                                        android:drawableRight="@drawable/show_next_item"
+                                        android:textSize="16dp"
+                                        android:padding="10dp">
+                                </Button>
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="本应用支持自动定期清理缓存"
+                                        android:textSize="10dp"
+                                        android:gravity="right">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:orientation="vertical">
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" 关于我们"
+                                        android:textColor="#A0A1A1"
+                                        android:padding="5dp">
+                                </TextView>
+
+                                <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/grouped_item_top_bg"
+                                        android:orientation="horizontal"
+                                        android:gravity="left"
+                                        android:text="  检查更新(当前版本:1.1.0)       "
+                                        android:drawableLeft="@drawable/check_for_update"
+                                        android:drawableRight="@drawable/show_next_item"
+                                        android:textSize="16dp"
+                                        android:padding="10dp">
+                                </Button>
+                                <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/grouped_item_bottom_bg"
+                                        android:orientation="horizontal"
+                                        android:gravity="left"
+                                        android:text="  关于            "
+                                        android:drawableLeft="@drawable/about_us_icon"
+                                        android:drawableRight="@drawable/show_next_item"
+                                        android:textSize="16dp"
+                                        android:padding="10dp">
+                                </Button>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TabWidget
+                android:layout_gravity="bottom"
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </TabWidget>
+    </TabHost>
+</LinearLayout>

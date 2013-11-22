@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <Button  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/title_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button_item"
+            android:text="    要闻     "
+            android:button="@null"
+            android:textColor="@color/text_item"
+            >
+    </Button>

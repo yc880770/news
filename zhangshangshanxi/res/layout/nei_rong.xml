@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <WebView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </WebView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/news_select_bg"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center_vertical">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newsdetail_back_button_item"
+
+               >
+
+        </Button>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newsdetail_comment_button_item"
+                android:layout_gravity="center"
+
+                >
+
+        </Button>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_button_item"
+                android:layout_gravity="right"
+
+                >
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

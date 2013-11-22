@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@drawable/navigation_bar_bg"
+            android:gravity="center_vertical">
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="返回"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/titl_back_button_item"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                >
+
+        </Button>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="分享至新浪微博"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+        </TextView>
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="提交"
+                android:gravity="center"
+                android:background="@drawable/titl_submit_button_item"
+                android:textColor="#FFFFFF"
+
+                >
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/comment_bg"
+            android:padding="20dp"
+            android:orientation="vertical"
+            >
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:background="@drawable/edit_text_input_bg"
+                android:gravity="top"
+                android:hint="//分享掌上陕西资讯：[市民穿民国服饰玩穿越]"
+                android:maxLength="140"
+                >
+
+        </EditText>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="0/140"
+                android:gravity="right">
+
+        </TextView>
+
+
+    </LinearLayout>
+</LinearLayout>

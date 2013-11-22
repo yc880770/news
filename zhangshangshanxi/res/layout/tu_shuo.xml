@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/navigation_bar_bg">
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="图说"
+                android:textSize="24dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <ListView
+            android:id="@+id/tu_shuo_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff000"
+            android:layout_weight="1">
+
+    </ListView>
+
+        <RadioGroup
+                android:id="@+id/main_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <RadioButton
+                    android:id="@+id/main_radio_ziXun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_item"
+                    android:text="资讯"
+                    android:gravity="center">
+
+            </RadioButton>
+            <RadioButton
+                    android:id="@+id/main_radio_huoDong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_item"
+                    android:gravity="center"
+                    android:text="活动">
+
+            </RadioButton>
+            <RadioButton
+                    android:id="@+id/main_radio_tuShuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_item"
+                    android:text="图说"
+                    android:gravity="center">
+
+            </RadioButton>
+            <RadioButton
+                    android:id="@+id/main_radio_gengDuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_item"
+                    android:text="更多"
+                    android:gravity="center">
+
+            </RadioButton>
+        </RadioGroup>
+
+</LinearLayout>
+
